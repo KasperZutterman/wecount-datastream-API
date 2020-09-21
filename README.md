@@ -12,7 +12,7 @@ params:
 - page
 
 ### Daily traffic:
-endpoint: \cameras  
+endpoint: \observations_daily 
 params:
 - page
 - date (YYYY-MM-DD format)
