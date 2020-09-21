@@ -1,0 +1,58 @@
+{
+    "@id": "https://streams.datapiloten.be/observations",
+    "tree:shape": {
+        "sh:property": [
+            {
+                "sh:path": "sosa:madeBySensor",
+                "sh:nodeKind": "sh:IRI",
+                "sh:minCount": 1,
+                "sh:maxCount": 1
+            },
+            {
+                "sh:path": "sosa:resultTime",
+                "sh:datatype": "xsd:dateTime",
+                "sh:minCount": 1,
+                "sh:maxCount": 1
+            },
+            {
+                "sh:path": "sosa:hasFeatureOfInterest",
+                "sh:node": {
+                    "sh:property": {
+                        "sh:path": "geo:asWKT",
+                        "sh:datatype": "geo:wktLiteral",
+                        "sh:minCount": 1,
+                        "sh:maxCount": 1
+                    }
+                },
+                "sh:minCount": 1,
+                "sh:maxCount": 1
+            },
+            {
+                "sh:path": "sosa:observedProperty",
+                "sh:nodeKind": "sh:IRI",
+                "sh:minCount": 1
+            },
+            {
+                "sh:path": "sosa:hasResult",
+                "sh:node": {
+                    "sh:property": [
+                        {
+                            "sh:path": "qudt:numericValue",
+                            "sh:datatype": "xsd:double",
+                            "sh:minCount": 1,
+                            "sh:maxCount": 1
+                        },
+                        {
+                            "sh:path": "qudt:unit",
+                            "sh:nodeKind": "sh:IRI",
+                            "sh:minCount": 1,
+                            "sh:maxCount": 1
+                        }
+                    ]
+                },
+                "sh:minCount": 1,
+                "sh:maxCount": 1
+            }
+        ]
+    }
+}

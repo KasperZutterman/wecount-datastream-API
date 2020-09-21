@@ -1,0 +1,31 @@
+{
+    "@id": "http://localhost:3000/cameras",
+    "tree:shape": {
+        "sh:property": [
+            {
+                "sh:path": "dct:created",
+                "sh:datatype": "xsd:dateTime",
+                "sh:minCount": 1,
+                "sh:maxCount": 1
+            },
+            {
+                "sh:path": "geo:hasGeometry",
+                "sh:node": {
+                    "sh:property": {
+                        "sh:path": "geo:asWKT",
+                        "sh:datatype": "geo:wktLiteral",
+                        "sh:minCount": 1,
+                        "sh:maxCount": 1
+                    }
+                },
+                "sh:minCount": 1,
+                "sh:maxCount": 1
+            },
+            {
+                "sh:path": "sosa:observes",
+                "sh:nodeKind": "sh:IRI",
+                "sh:minCount": 1
+            }
+        ]
+    }
+}

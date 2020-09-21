@@ -1,0 +1,102 @@
+{
+    "@context": {
+        "sosa": "http://www.w3.org/ns/sosa/",
+        "hasFeatureOfInterest": "sosa:hasFeatureOfInterest",
+        "madeBySensor": {
+            "@id": "sosa:madeBySensor",
+            "@type": "@id"
+        },
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "resultTime": {
+            "@id": "sosa:resultTime",
+            "@type": "xsd:dateTime"
+        },
+        "observedProperty": {
+            "@id": "sosa:observedProperty",
+            "@type": "@id"
+        },
+        "observes": {
+            "@id": "sosa:observes",
+            "@type": "@id"
+        },
+        "hasResult": "sosa:hasResult",
+        "geo": "http://www.opengis.net/ont/geosparql#",
+        "asWKT": {
+            "@id": "geo:asWKT",
+            "@type": "geo:wktLiteral"
+        },
+        "hasGeometry": "geo:hasGeometry",
+        "cot": "https://w3id.org/cot/",
+        "qudt": "http://qudt.org/1.1/schema/qudt#",
+        "numericValue": "qudt:numericValue",
+        "unit": {
+            "@id": "qudt:unit",
+            "@type": "@id"
+        },
+        "m3": "http://purl.org/iot/vocab/m3-lite#",
+        "tree": "https://w3id.org/tree#",
+        "feed_url": {
+            "@reverse": "tree:view",
+            "@type": "@id"
+        },
+        "memberOf": {
+            "@reverse": "tree:member",
+            "@type": "@id"
+        },
+        "items": "@included",
+        "id": "@id",
+        "hydra": "http://www.w3.org/ns/hydra/core#",
+        "next_url": {
+            "@id": "hydra:next",
+            "@type": "@id"
+        },
+        "previous_url": {
+            "@id": "hydra:previous",
+            "@type": "@id"
+        },
+        "tree:node": {
+            "@type": "@id"
+        },
+        "tree:path": {
+            "@type": "@id"
+        },
+        "prov": "http://www.w3.org/ns/prov#",
+        "prov:generatedAtTime": {
+            "@type": "xsd:dateTime"
+        },
+        "dct": "http://purl.org/dc/terms/",
+        "isVersionOf": {
+            "@id": "dct:isVersionOf",
+            "@type": "@id"
+        },
+        "sh": "https://www.w3.org/ns/shacl#",
+        "sh:nodeKind": {
+            "@type": "@id"
+        },
+        "sh:path": {
+            "@type": "@id"
+        },
+        "sh:datatype": {
+            "@type": "@id"
+        },
+        "wecount": "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+    },
+    "feed_url": "http://localhost:3000/cameras",
+    "id": "http://localhost:3000/cameras?page=2",
+    "next_url": "http://localhost:3000/cameras?page=3",
+    "previous_url": "http://localhost:3000/cameras?page=1",
+    "tree:relation": [
+        {
+            "@type": "tree:LessOrEqualThanRelation",
+            "tree:node": "http://localhost:3000/cameras?page=3",
+            "tree:path": "prov:generatedAtTime",
+            "tree:value": {
+                "@value": "2020-06-30T14:48:52.013Z",
+                "@type": "wecount:mac"
+            }
+        }
+    ],
+    "items": [
+        
+    ]
+}
